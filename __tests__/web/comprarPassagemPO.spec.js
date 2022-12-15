@@ -4,6 +4,7 @@ const HomePage = require("../../pageObjects/HomePage");
 const webdriver = require("selenium-webdriver");
 const chrome = require("selenium-webdriver/chrome");
 const assert = require("assert");
+require ("chromedriver");
 
 
 // ToDo: massa de teste
@@ -11,7 +12,7 @@ const assert = require("assert");
 describe("Comprar Passagem via BlazeDemo - Page Object", () => {
     let driver; // objeto que será o Selenium
     // Cria um objeto para fazer uma configuração avançada do driver
-    const chOptions = new chrome.Options();
+    const chOptions = new chrome.Options().headless();// headless roda sem abrir o navegador na tela(somente por tras)
 
     // Inicialização
     beforeEach(() => {
