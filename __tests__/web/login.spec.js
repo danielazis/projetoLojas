@@ -3,10 +3,13 @@ const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
 describe('Login', function() {
-  this.timeout(30000)
+ 
   let driver
+  
   let vars
+  
   beforeEach(async function() {
+    
     driver = await new Builder().forBrowser('chrome').build()
     vars = {}
   })
@@ -14,6 +17,7 @@ describe('Login', function() {
     await driver.quit();
   })
   it('Login', async function() {
+   // this.timeout(30000)
     await driver.get("https://blazedemo.com/")
     await driver.manage().window().setRect({ width: 1382, height: 744 })
     await driver.findElement(By.linkText("home")).click()

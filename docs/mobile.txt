@@ -1,0 +1,9 @@
+Testes Mobile 
+- Smartphone (celular)
+- Tablets
+- SmartTVs
+- Weareables (vestíveis)
+    - Smartband (pulseiras)
+    - Smartwatchs (relógios)
+    - Outros
+- Embarcados
